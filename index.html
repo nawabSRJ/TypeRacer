@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TypeRacer</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1 style="color: #E2B714; font-family: Faster One, system-ui; font-weight: 100; text-align: left; font-size: 80px;" >TypeRacer</h1><br>
+        </div>
+
+        <div class="type-area">
+            <!-- <div id="cursor" style="color: #E2B714;">|</div> -->
+
+            <textarea cols="400" rows="10" id="field" placeholder="Start typing here..."
+                style="font-style: italic;"></textarea>
+        </div>
+        <br>
+
+
+        <div style="text-align: left; width: 80%; height: 25vh; border: 1px solid transparent;">
+            <label for="timeLimit" style="font-size: 30px; display: inline-block;">Select Total Time :</label>
+            <select name="timeLimit" id="timeLimit" style="display: inline-block; font-size: larger;">
+                <option value="10">10 sec</option>
+                <option value="30">30 sec</option>
+                <option value="60">60 sec</option>
+            </select>
+
+            <label for="stopwatch" style="font-size: 30px; display: inline-block; margin-left: 30px;">
+                Stopwatch : <span id="stopwatch" style="color: white;">00:00:00</span>
+            </label>
+            <label for="speed" style="display: inline-block; font-size: 30px;  margin-left: 30px;">WPM : </label>
+            <label id="speed" style="display: inline-block; font-size: 30px;  color: white;margin-left: 2px;"></label>
+        </div>
+    </div>
+</body>
+<!-- <script src="index.js"></script> script for monkeytype clone  -->
+
+<!-- for normal game -->
+
+<script src="app.js"></script>
+<script>
+    function stopBlink() {
+        var cur = document.getElementById('cursor')
+        cur.classList.add('hide')
+    }
+
+</script>
+
+</html>

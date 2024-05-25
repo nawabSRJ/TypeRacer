@@ -1,0 +1,4 @@
+Background color : #333537 ; (from monkeytype)
+Foreground Yellowish Color : #E2B714
+
+Logo font family : Faster One
